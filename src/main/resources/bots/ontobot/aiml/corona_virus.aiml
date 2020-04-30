@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml>
+<!-- File: corona_virus.aiml -->
+<!-- Author: Damith Warnakulasuriya -->
+<!-- Last modified: April 30, 2020 -->
+<!--  -->
+<!-- This AIML file is part of the ONTOBOT 0.0.4 chat bot knowledge base. -->
+<!--  -->
+<!-- The ONTOBOT brain is Copyright &copy; 2020 by IIT. -->
+<!--  -->
+<!-- The ONTOBOT brain is released under the terms of the GNU Lesser General -->
+<!-- Public License, as published by the Free Software Foundation. -->
+<!--  -->
+<!-- This file is distributed WITHOUT ANY WARRANTY; without even the  -->
+<!-- implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.   -->
+<!--  -->
+<!-- For more information see http://www.alicebot.org -->
+<category><pattern>SYMPTOMS OF <SET>VIRUSES</SET></pattern>
+<template>RT|T01|Here are the symptoms of the <star/>|<star/></template>
+</category>
+<category><pattern>SYMPTOMS OF *</pattern>
+<template>Sorry I cant understand that virus kind</template>
+</category>
+<category><pattern>WHAT ARE THE SYMPTOMS OF <SET>CORONA</SET></pattern>
+<template>RT|T01|Here are the symptoms of the <star/>|covid19</template>
+</category>
+<category><pattern>WHAT ARE THE SYMPTOMS OF *</pattern>
+<template><srai>SYMPTOMS OF <star/></srai></template>
+</category>
+<category><pattern>WHAT PUTS * AT RISK</pattern>
+<template>RT|T02|<star/> risked from..|<star/></template>
+</category>
+<category><pattern>WHAT PUTS PEOPLE WITH * AT RISK</pattern>
+<template>RT|T02|People with <star/> are risked from..|<star/></template>
+</category>
+<category><pattern>VULNERABLE FOR <SET>VIRUSES</SET></pattern>
+<template>RT|T03|Following make you vulnerable for <star/>|<star/></template>
+</category>
+<category><pattern>VULNERABLE FOR *</pattern>
+<template>Sorry I cant understand that virus kind</template>
+</category>
+<category><pattern>WHAT MAKES ME VULNERABLE FOR <SET>CORONA</SET></pattern>
+<template>RT|T03|Following make you vulnerable for <star/>|covid19</template>
+</category>
+<category><pattern>WHAT MAKES ME VULNERABLE FOR *</pattern>
+<template><srai>VULNERABLE FOR <star/></srai></template>
+</category>
+<category><pattern>I HAVE A *</pattern>
+<template>RT|T04|Here is what i know of <star/>|<star/></template>
+</category>
+<category><pattern>WHAT ARE THE MYTHS ABOUT <SET>CORONA</SET></pattern>
+<template>RT|T05|Myths about <star/> are corrected in the list below...|covid19</template>
+</category>
+<category><pattern>WHAT ARE THE MYTHS ABOUT *</pattern>
+<template>Sorry I don't know any myths about <sta/></template>
+</category>
+</aiml>

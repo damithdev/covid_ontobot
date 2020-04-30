@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml>
+<!-- File: update.aiml -->
+<!-- Author: Damith Warnakulasuriya -->
+<!-- Last modified: April 30, 2020 -->
+<!--  -->
+<!-- This AIML file is part of the ONTOBOT 0.0.4 chat bot knowledge base. -->
+<!--  -->
+<!-- The ONTOBOT brain is Copyright &copy; 2020 by IIT. -->
+<!--  -->
+<!-- The ONTOBOT brain is released under the terms of the GNU Lesser General -->
+<!-- Public License, as published by the Free Software Foundation. -->
+<!--  -->
+<!-- This file is distributed WITHOUT ANY WARRANTY; without even the  -->
+<!-- implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.   -->
+<!--  -->
+<!-- For more information see http://www.alicebot.org -->
+<category><pattern>BUILD</pattern>
+<template>Thu Apr 30 22:58:34 IST 2020</template>
+</category>
+<category><pattern>DELEVLOPMENT ENVIRONMENT</pattern>
+<template>Program AB 0.0.4.2 beta -- AI Foundation Reference AIML 2.0 implementation</template>
+</category>
+</aiml>

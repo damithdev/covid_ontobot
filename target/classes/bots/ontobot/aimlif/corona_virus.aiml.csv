@@ -1,0 +1,13 @@
+0,SYMPTOMS OF <SET>VIRUSES</SET>,*,*,RT|T01|Here are the symptoms of the <star/>|<star/>,corona_virus.aiml
+0,SYMPTOMS OF *,*,*,Sorry I cant understand that virus kind,corona_virus.aiml
+0,WHAT ARE THE SYMPTOMS OF <SET>CORONA</SET>,*,*,RT|T01|Here are the symptoms of the <star/>|covid19,corona_virus.aiml
+0,WHAT ARE THE SYMPTOMS OF *,*,*,<srai>SYMPTOMS OF <star/></srai>,corona_virus.aiml
+0,WHAT PUTS * AT RISK,*,*,RT|T02|<star/> risked from..|<star/>,corona_virus.aiml
+0,WHAT PUTS PEOPLE WITH * AT RISK,*,*,RT|T02|People with <star/> are risked from..|<star/>,corona_virus.aiml
+0,VULNERABLE FOR <SET>VIRUSES</SET>,*,*,RT|T03|Following make you vulnerable for <star/>|<star/>,corona_virus.aiml
+0,VULNERABLE FOR *,*,*,Sorry I cant understand that virus kind,corona_virus.aiml
+0,WHAT MAKES ME VULNERABLE FOR <SET>CORONA</SET>,*,*,RT|T03|Following make you vulnerable for <star/>|covid19,corona_virus.aiml
+0,WHAT MAKES ME VULNERABLE FOR *,*,*,<srai>VULNERABLE FOR <star/></srai>,corona_virus.aiml
+0,I HAVE A *,*,*,RT|T04|Here is what i know of <star/>|<star/>,corona_virus.aiml
+0,WHAT ARE THE MYTHS ABOUT <SET>CORONA</SET>,*,*,RT|T05|The myths about <star/> are...|covid19,corona_virus.aiml
+0,WHAT ARE THE MYTHS ABOUT *,*,*,Sorry I don't know any myths about <sta/>,corona_virus.aiml

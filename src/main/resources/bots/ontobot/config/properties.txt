@@ -1,0 +1,8 @@
+url:http://www.alicebot.org
+name:Ontobot
+email:damith.20191273@iit.ac.lk
+gender:male
+botmaster:Damith Warnakulasuriya
+organization:IIT
+version:0.0.4
+

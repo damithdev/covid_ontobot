@@ -1,0 +1,723 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://coronavirusawareness.rdf#"
+     xml:base="http://coronavirusawareness.rdf"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://coronavirusawareness.rdf"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://coronavirusawareness.rdf#can_be_prevented_by -->
+
+    <owl:ObjectProperty rdf:about="http://coronavirusawareness.rdf#can_be_prevented_by">
+        <rdfs:domain rdf:resource="http://coronavirusawareness.rdf#infections"/>
+        <rdfs:range rdf:resource="http://coronavirusawareness.rdf#prevention"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://coronavirusawareness.rdf#cause_symptoms -->
+
+    <owl:ObjectProperty rdf:about="http://coronavirusawareness.rdf#cause_symptoms">
+        <rdfs:domain rdf:resource="http://coronavirusawareness.rdf#infections"/>
+        <rdfs:range rdf:resource="http://coronavirusawareness.rdf#symptoms"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://coronavirusawareness.rdf#has_wrong_information -->
+
+    <owl:ObjectProperty rdf:about="http://coronavirusawareness.rdf#has_wrong_information">
+        <rdfs:domain rdf:resource="http://coronavirusawareness.rdf#infections"/>
+        <rdfs:range rdf:resource="http://coronavirusawareness.rdf#misconceptions"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://coronavirusawareness.rdf#puts_into_risk -->
+
+    <owl:ObjectProperty rdf:about="http://coronavirusawareness.rdf#puts_into_risk">
+        <rdfs:domain rdf:resource="http://coronavirusawareness.rdf#infections"/>
+        <rdfs:range rdf:resource="http://coronavirusawareness.rdf#age_groups"/>
+        <rdfs:range rdf:resource="http://coronavirusawareness.rdf#habits"/>
+        <rdfs:range rdf:resource="http://coronavirusawareness.rdf#prior_medical_conditions"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://coronavirusawareness.rdf#description -->
+
+    <owl:DatatypeProperty rdf:about="http://coronavirusawareness.rdf#description"/>
+    
+
+
+    <!-- http://coronavirusawareness.rdf#methods -->
+
+    <owl:DatatypeProperty rdf:about="http://coronavirusawareness.rdf#methods"/>
+    
+
+
+    <!-- http://coronavirusawareness.rdf#type -->
+
+    <owl:DatatypeProperty rdf:about="http://coronavirusawareness.rdf#type"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://coronavirusawareness.rdf#age_groups -->
+
+    <owl:Class rdf:about="http://coronavirusawareness.rdf#age_groups">
+        <rdfs:subClassOf rdf:resource="http://coronavirusawareness.rdf#risk_factors"/>
+    </owl:Class>
+    
+
+
+    <!-- http://coronavirusawareness.rdf#habits -->
+
+    <owl:Class rdf:about="http://coronavirusawareness.rdf#habits">
+        <rdfs:subClassOf rdf:resource="http://coronavirusawareness.rdf#risk_factors"/>
+    </owl:Class>
+    
+
+
+    <!-- http://coronavirusawareness.rdf#infections -->
+
+    <owl:Class rdf:about="http://coronavirusawareness.rdf#infections"/>
+    
+
+
+    <!-- http://coronavirusawareness.rdf#misconceptions -->
+
+    <owl:Class rdf:about="http://coronavirusawareness.rdf#misconceptions">
+        <rdfs:subClassOf rdf:resource="http://coronavirusawareness.rdf#infections"/>
+    </owl:Class>
+    
+
+
+    <!-- http://coronavirusawareness.rdf#people -->
+
+    <owl:Class rdf:about="http://coronavirusawareness.rdf#people"/>
+    
+
+
+    <!-- http://coronavirusawareness.rdf#prevention -->
+
+    <owl:Class rdf:about="http://coronavirusawareness.rdf#prevention">
+        <rdfs:subClassOf rdf:resource="http://coronavirusawareness.rdf#infections"/>
+    </owl:Class>
+    
+
+
+    <!-- http://coronavirusawareness.rdf#prior_medical_conditions -->
+
+    <owl:Class rdf:about="http://coronavirusawareness.rdf#prior_medical_conditions">
+        <rdfs:subClassOf rdf:resource="http://coronavirusawareness.rdf#risk_factors"/>
+    </owl:Class>
+    
+
+
+    <!-- http://coronavirusawareness.rdf#risk_factors -->
+
+    <owl:Class rdf:about="http://coronavirusawareness.rdf#risk_factors">
+        <rdfs:subClassOf rdf:resource="http://coronavirusawareness.rdf#people"/>
+    </owl:Class>
+    
+
+
+    <!-- http://coronavirusawareness.rdf#symptoms -->
+
+    <owl:Class rdf:about="http://coronavirusawareness.rdf#symptoms">
+        <rdfs:subClassOf rdf:resource="http://coronavirusawareness.rdf#infections"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://coronavirusawareness.rdf#Infants -->
+
+    <owl:NamedIndividual rdf:about="http://coronavirusawareness.rdf#Infants">
+        <rdf:type rdf:resource="http://coronavirusawareness.rdf#age_groups"/>
+        <type rdf:datatype="http://www.w3.org/2001/XMLSchema#string">age_group</type>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://coronavirusawareness.rdf#adults -->
+
+    <owl:NamedIndividual rdf:about="http://coronavirusawareness.rdf#adults">
+        <rdf:type rdf:resource="http://coronavirusawareness.rdf#age_groups"/>
+        <type rdf:datatype="http://www.w3.org/2001/XMLSchema#string">age_group</type>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://coronavirusawareness.rdf#alcohol_bath -->
+
+    <owl:NamedIndividual rdf:about="http://coronavirusawareness.rdf#alcohol_bath">
+        <rdf:type rdf:resource="http://coronavirusawareness.rdf#misconceptions"/>
+        <description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Spraying alcohol or chlorine all over your body will not kill viruses that have already entered your body.</description>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://coronavirusawareness.rdf#allergies -->
+
+    <owl:NamedIndividual rdf:about="http://coronavirusawareness.rdf#allergies">
+        <rdf:type rdf:resource="http://coronavirusawareness.rdf#infections"/>
+        <cause_symptoms rdf:resource="http://coronavirusawareness.rdf#itchy_eyes_mouth_or_skin"/>
+        <cause_symptoms rdf:resource="http://coronavirusawareness.rdf#runny_nose"/>
+        <cause_symptoms rdf:resource="http://coronavirusawareness.rdf#sneezing"/>
+        <cause_symptoms rdf:resource="http://coronavirusawareness.rdf#stuffy_nose"/>
+        <puts_into_risk rdf:resource="http://coronavirusawareness.rdf#smoking"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://coronavirusawareness.rdf#antibiotics -->
+
+    <owl:NamedIndividual rdf:about="http://coronavirusawareness.rdf#antibiotics">
+        <rdf:type rdf:resource="http://coronavirusawareness.rdf#misconceptions"/>
+        <description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">No, antibiotics do not work against viruses, only bacteria.</description>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://coronavirusawareness.rdf#asthma -->
+
+    <owl:NamedIndividual rdf:about="http://coronavirusawareness.rdf#asthma">
+        <rdf:type rdf:resource="http://coronavirusawareness.rdf#prior_medical_conditions"/>
+        <type rdf:datatype="http://www.w3.org/2001/XMLSchema#string">medical_condition</type>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://coronavirusawareness.rdf#call_ahead -->
+
+    <owl:NamedIndividual rdf:about="http://coronavirusawareness.rdf#call_ahead">
+        <rdf:type rdf:resource="http://coronavirusawareness.rdf#prevention"/>
+        <description>If you have a fever, a cough, and difficulty breathing, seek medical attention. Call in advance</description>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://coronavirusawareness.rdf#chest_discomfort -->
+
+    <owl:NamedIndividual rdf:about="http://coronavirusawareness.rdf#chest_discomfort">
+        <rdf:type rdf:resource="http://coronavirusawareness.rdf#symptoms"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://coronavirusawareness.rdf#children -->
+
+    <owl:NamedIndividual rdf:about="http://coronavirusawareness.rdf#children">
+        <rdf:type rdf:resource="http://coronavirusawareness.rdf#age_groups"/>
+        <type rdf:datatype="http://www.w3.org/2001/XMLSchema#string">age_group</type>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://coronavirusawareness.rdf#chronic_illness -->
+
+    <owl:NamedIndividual rdf:about="http://coronavirusawareness.rdf#chronic_illness">
+        <rdf:type rdf:resource="http://coronavirusawareness.rdf#prior_medical_conditions"/>
+        <type rdf:datatype="http://www.w3.org/2001/XMLSchema#string">medical_condition</type>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://coronavirusawareness.rdf#cold -->
+
+    <owl:NamedIndividual rdf:about="http://coronavirusawareness.rdf#cold">
+        <rdf:type rdf:resource="http://coronavirusawareness.rdf#infections"/>
+        <cause_symptoms rdf:resource="http://coronavirusawareness.rdf#chest_discomfort"/>
+        <cause_symptoms rdf:resource="http://coronavirusawareness.rdf#sneezing"/>
+        <cause_symptoms rdf:resource="http://coronavirusawareness.rdf#sore_throat"/>
+        <cause_symptoms rdf:resource="http://coronavirusawareness.rdf#stuffy_nose"/>
+        <puts_into_risk rdf:resource="http://coronavirusawareness.rdf#Infants"/>
+        <puts_into_risk rdf:resource="http://coronavirusawareness.rdf#children"/>
+        <puts_into_risk rdf:resource="http://coronavirusawareness.rdf#chronic_illness"/>
+        <puts_into_risk rdf:resource="http://coronavirusawareness.rdf#immune_deficiencies"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://coronavirusawareness.rdf#cold_weather -->
+
+    <owl:NamedIndividual rdf:about="http://coronavirusawareness.rdf#cold_weather">
+        <rdf:type rdf:resource="http://coronavirusawareness.rdf#misconceptions"/>
+        <description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Cold weather and snow CANNOT kill the new coronavirus</description>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://coronavirusawareness.rdf#cough -->
+
+    <owl:NamedIndividual rdf:about="http://coronavirusawareness.rdf#cough">
+        <rdf:type rdf:resource="http://coronavirusawareness.rdf#symptoms"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://coronavirusawareness.rdf#cover_cough -->
+
+    <owl:NamedIndividual rdf:about="http://coronavirusawareness.rdf#cover_cough">
+        <rdf:type rdf:resource="http://coronavirusawareness.rdf#prevention"/>
+        <description>Cover your nose and mouth with your bent elbow or a tissue when you cough or sneeze.</description>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://coronavirusawareness.rdf#covid19 -->
+
+    <owl:NamedIndividual rdf:about="http://coronavirusawareness.rdf#covid19">
+        <rdf:type rdf:resource="http://coronavirusawareness.rdf#infections"/>
+        <can_be_prevented_by rdf:resource="http://coronavirusawareness.rdf#call_ahead"/>
+        <can_be_prevented_by rdf:resource="http://coronavirusawareness.rdf#cover_cough"/>
+        <can_be_prevented_by rdf:resource="http://coronavirusawareness.rdf#social_distancing"/>
+        <can_be_prevented_by rdf:resource="http://coronavirusawareness.rdf#wash_hands"/>
+        <cause_symptoms rdf:resource="http://coronavirusawareness.rdf#dry_cough"/>
+        <cause_symptoms rdf:resource="http://coronavirusawareness.rdf#fatigue"/>
+        <cause_symptoms rdf:resource="http://coronavirusawareness.rdf#fever"/>
+        <cause_symptoms rdf:resource="http://coronavirusawareness.rdf#shortness_of_breath"/>
+        <has_wrong_information rdf:resource="http://coronavirusawareness.rdf#alcohol_bath"/>
+        <has_wrong_information rdf:resource="http://coronavirusawareness.rdf#antibiotics"/>
+        <has_wrong_information rdf:resource="http://coronavirusawareness.rdf#cold_weather"/>
+        <has_wrong_information rdf:resource="http://coronavirusawareness.rdf#drinking_alcohol_helps"/>
+        <has_wrong_information rdf:resource="http://coronavirusawareness.rdf#eating_garlic"/>
+        <has_wrong_information rdf:resource="http://coronavirusawareness.rdf#hand_dryers"/>
+        <has_wrong_information rdf:resource="http://coronavirusawareness.rdf#hot_bath"/>
+        <has_wrong_information rdf:resource="http://coronavirusawareness.rdf#hot_climates"/>
+        <has_wrong_information rdf:resource="http://coronavirusawareness.rdf#medicines"/>
+        <has_wrong_information rdf:resource="http://coronavirusawareness.rdf#mosquito_bites"/>
+        <has_wrong_information rdf:resource="http://coronavirusawareness.rdf#no_recovery"/>
+        <has_wrong_information rdf:resource="http://coronavirusawareness.rdf#only_older_people"/>
+        <has_wrong_information rdf:resource="http://coronavirusawareness.rdf#rinsing_nose"/>
+        <has_wrong_information rdf:resource="http://coronavirusawareness.rdf#sun_exposure"/>
+        <has_wrong_information rdf:resource="http://coronavirusawareness.rdf#thermal_scanners"/>
+        <has_wrong_information rdf:resource="http://coronavirusawareness.rdf#ultraviolet"/>
+        <has_wrong_information rdf:resource="http://coronavirusawareness.rdf#10_second_breath"/>
+        <has_wrong_information rdf:resource="http://coronavirusawareness.rdf#5g_mobile"/>
+        <puts_into_risk rdf:resource="http://coronavirusawareness.rdf#diabetes"/>
+        <puts_into_risk rdf:resource="http://coronavirusawareness.rdf#elders"/>
+        <puts_into_risk rdf:resource="http://coronavirusawareness.rdf#heart_conditions"/>
+        <puts_into_risk rdf:resource="http://coronavirusawareness.rdf#immune_deficiencies"/>
+        <puts_into_risk rdf:resource="http://coronavirusawareness.rdf#kidney_disease"/>
+        <puts_into_risk rdf:resource="http://coronavirusawareness.rdf#liver_disease"/>
+        <puts_into_risk rdf:resource="http://coronavirusawareness.rdf#lung_disease"/>
+        <puts_into_risk rdf:resource="http://coronavirusawareness.rdf#severe_obesity"/>
+        <puts_into_risk rdf:resource="http://coronavirusawareness.rdf#smoking"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://coronavirusawareness.rdf#diabetes -->
+
+    <owl:NamedIndividual rdf:about="http://coronavirusawareness.rdf#diabetes">
+        <rdf:type rdf:resource="http://coronavirusawareness.rdf#prior_medical_conditions"/>
+        <type rdf:datatype="http://www.w3.org/2001/XMLSchema#string">medical_condition</type>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://coronavirusawareness.rdf#drinking_alcohol_helps -->
+
+    <owl:NamedIndividual rdf:about="http://coronavirusawareness.rdf#drinking_alcohol_helps">
+        <rdf:type rdf:resource="http://coronavirusawareness.rdf#misconceptions"/>
+        <description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Drinking alcohol does not protect you against COVID-19</description>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://coronavirusawareness.rdf#droplets -->
+
+    <owl:NamedIndividual rdf:about="http://coronavirusawareness.rdf#droplets"/>
+    
+
+
+    <!-- http://coronavirusawareness.rdf#dry_cough -->
+
+    <owl:NamedIndividual rdf:about="http://coronavirusawareness.rdf#dry_cough">
+        <rdf:type rdf:resource="http://coronavirusawareness.rdf#symptoms"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://coronavirusawareness.rdf#eating_garlic -->
+
+    <owl:NamedIndividual rdf:about="http://coronavirusawareness.rdf#eating_garlic">
+        <rdf:type rdf:resource="http://coronavirusawareness.rdf#misconceptions"/>
+        <description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Garlic is a healthy food that may have some antimicrobial properties. However, there is no evidence from the current outbreak that eating garlic has protected people from the new coronavirus</description>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://coronavirusawareness.rdf#elders -->
+
+    <owl:NamedIndividual rdf:about="http://coronavirusawareness.rdf#elders">
+        <rdf:type rdf:resource="http://coronavirusawareness.rdf#age_groups"/>
+        <type rdf:datatype="http://www.w3.org/2001/XMLSchema#string">age_group</type>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://coronavirusawareness.rdf#fatigue -->
+
+    <owl:NamedIndividual rdf:about="http://coronavirusawareness.rdf#fatigue">
+        <rdf:type rdf:resource="http://coronavirusawareness.rdf#symptoms"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://coronavirusawareness.rdf#fever -->
+
+    <owl:NamedIndividual rdf:about="http://coronavirusawareness.rdf#fever">
+        <rdf:type rdf:resource="http://coronavirusawareness.rdf#symptoms"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://coronavirusawareness.rdf#flu -->
+
+    <owl:NamedIndividual rdf:about="http://coronavirusawareness.rdf#flu">
+        <rdf:type rdf:resource="http://coronavirusawareness.rdf#infections"/>
+        <cause_symptoms rdf:resource="http://coronavirusawareness.rdf#cough"/>
+        <cause_symptoms rdf:resource="http://coronavirusawareness.rdf#fatigue"/>
+        <cause_symptoms rdf:resource="http://coronavirusawareness.rdf#fever"/>
+        <cause_symptoms rdf:resource="http://coronavirusawareness.rdf#headache"/>
+        <cause_symptoms rdf:resource="http://coronavirusawareness.rdf#muscle_aches"/>
+        <puts_into_risk rdf:resource="http://coronavirusawareness.rdf#Infants"/>
+        <puts_into_risk rdf:resource="http://coronavirusawareness.rdf#elders"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://coronavirusawareness.rdf#hand_dryers -->
+
+    <owl:NamedIndividual rdf:about="http://coronavirusawareness.rdf#hand_dryers">
+        <rdf:type rdf:resource="http://coronavirusawareness.rdf#misconceptions"/>
+        <description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Hand dryers are not effective in killing the 2019-nCoV. To protect yourself against the new coronavirus, you should frequently clean your hands with an alcohol-based hand rub or wash them with soap and water.</description>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://coronavirusawareness.rdf#headache -->
+
+    <owl:NamedIndividual rdf:about="http://coronavirusawareness.rdf#headache">
+        <rdf:type rdf:resource="http://coronavirusawareness.rdf#symptoms"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://coronavirusawareness.rdf#heart_conditions -->
+
+    <owl:NamedIndividual rdf:about="http://coronavirusawareness.rdf#heart_conditions">
+        <rdf:type rdf:resource="http://coronavirusawareness.rdf#prior_medical_conditions"/>
+        <type rdf:datatype="http://www.w3.org/2001/XMLSchema#string">medical_condition</type>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://coronavirusawareness.rdf#hot_bath -->
+
+    <owl:NamedIndividual rdf:about="http://coronavirusawareness.rdf#hot_bath">
+        <rdf:type rdf:resource="http://coronavirusawareness.rdf#misconceptions"/>
+        <description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Taking a hot bath does not prevent the new coronavirus disease</description>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://coronavirusawareness.rdf#hot_climates -->
+
+    <owl:NamedIndividual rdf:about="http://coronavirusawareness.rdf#hot_climates">
+        <rdf:type rdf:resource="http://coronavirusawareness.rdf#misconceptions"/>
+        <description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">COVID-19 virus can be transmitted in areas with hot and humid climates</description>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://coronavirusawareness.rdf#immune_deficiencies -->
+
+    <owl:NamedIndividual rdf:about="http://coronavirusawareness.rdf#immune_deficiencies">
+        <rdf:type rdf:resource="http://coronavirusawareness.rdf#prior_medical_conditions"/>
+        <type rdf:datatype="http://www.w3.org/2001/XMLSchema#string">medical_condition</type>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://coronavirusawareness.rdf#itchy_eyes_mouth_or_skin -->
+
+    <owl:NamedIndividual rdf:about="http://coronavirusawareness.rdf#itchy_eyes_mouth_or_skin">
+        <rdf:type rdf:resource="http://coronavirusawareness.rdf#symptoms"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://coronavirusawareness.rdf#kidney_disease -->
+
+    <owl:NamedIndividual rdf:about="http://coronavirusawareness.rdf#kidney_disease">
+        <rdf:type rdf:resource="http://coronavirusawareness.rdf#prior_medical_conditions"/>
+        <type rdf:datatype="http://www.w3.org/2001/XMLSchema#string">medical_condition</type>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://coronavirusawareness.rdf#liver_disease -->
+
+    <owl:NamedIndividual rdf:about="http://coronavirusawareness.rdf#liver_disease">
+        <rdf:type rdf:resource="http://coronavirusawareness.rdf#prior_medical_conditions"/>
+        <type rdf:datatype="http://www.w3.org/2001/XMLSchema#string">medical_condition</type>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://coronavirusawareness.rdf#lung_disease -->
+
+    <owl:NamedIndividual rdf:about="http://coronavirusawareness.rdf#lung_disease">
+        <rdf:type rdf:resource="http://coronavirusawareness.rdf#prior_medical_conditions"/>
+        <type rdf:datatype="http://www.w3.org/2001/XMLSchema#string">medical_condition</type>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://coronavirusawareness.rdf#medicines -->
+
+    <owl:NamedIndividual rdf:about="http://coronavirusawareness.rdf#medicines">
+        <rdf:type rdf:resource="http://coronavirusawareness.rdf#misconceptions"/>
+        <description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">To date, there is no specific medicine recommended to prevent or treat the new coronavirus</description>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://coronavirusawareness.rdf#mosquito_bites -->
+
+    <owl:NamedIndividual rdf:about="http://coronavirusawareness.rdf#mosquito_bites">
+        <rdf:type rdf:resource="http://coronavirusawareness.rdf#misconceptions"/>
+        <description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The new coronavirus CANNOT be transmitted through mosquito bites.</description>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://coronavirusawareness.rdf#muscle_aches -->
+
+    <owl:NamedIndividual rdf:about="http://coronavirusawareness.rdf#muscle_aches">
+        <rdf:type rdf:resource="http://coronavirusawareness.rdf#symptoms"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://coronavirusawareness.rdf#no_recovery -->
+
+    <owl:NamedIndividual rdf:about="http://coronavirusawareness.rdf#no_recovery">
+        <rdf:type rdf:resource="http://coronavirusawareness.rdf#misconceptions"/>
+        <description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">You can recover from the coronavirus disease</description>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://coronavirusawareness.rdf#only_older_people -->
+
+    <owl:NamedIndividual rdf:about="http://coronavirusawareness.rdf#only_older_people">
+        <rdf:type rdf:resource="http://coronavirusawareness.rdf#misconceptions"/>
+        <description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">People of all ages can be infected by the new coronavirus (2019-nCoV). Older people, and people with pre-existing medical conditions (such as asthma, diabetes, heart disease) appear to be more vulnerable to becoming severely ill with the virus.</description>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://coronavirusawareness.rdf#pneumonia -->
+
+    <owl:NamedIndividual rdf:about="http://coronavirusawareness.rdf#pneumonia">
+        <rdf:type rdf:resource="http://coronavirusawareness.rdf#misconceptions"/>
+        <description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Vaccines against pneumonia, such as pneumococcal vaccine and Haemophilus influenza type B (Hib) vaccine, do not provide protection against the new coronavirus</description>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://coronavirusawareness.rdf#rinsing_nose -->
+
+    <owl:NamedIndividual rdf:about="http://coronavirusawareness.rdf#rinsing_nose">
+        <rdf:type rdf:resource="http://coronavirusawareness.rdf#misconceptions"/>
+        <description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">There is no evidence that regularly rinsing the nose with saline has protected people from infection with the new coronavirus</description>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://coronavirusawareness.rdf#runny_nose -->
+
+    <owl:NamedIndividual rdf:about="http://coronavirusawareness.rdf#runny_nose">
+        <rdf:type rdf:resource="http://coronavirusawareness.rdf#symptoms"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://coronavirusawareness.rdf#severe_obesity -->
+
+    <owl:NamedIndividual rdf:about="http://coronavirusawareness.rdf#severe_obesity">
+        <rdf:type rdf:resource="http://coronavirusawareness.rdf#prior_medical_conditions"/>
+        <type rdf:datatype="http://www.w3.org/2001/XMLSchema#string">medical_condition</type>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://coronavirusawareness.rdf#shortness_of_breath -->
+
+    <owl:NamedIndividual rdf:about="http://coronavirusawareness.rdf#shortness_of_breath">
+        <rdf:type rdf:resource="http://coronavirusawareness.rdf#symptoms"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://coronavirusawareness.rdf#smoking -->
+
+    <owl:NamedIndividual rdf:about="http://coronavirusawareness.rdf#smoking">
+        <rdf:type rdf:resource="http://coronavirusawareness.rdf#habits"/>
+        <type rdf:datatype="http://www.w3.org/2001/XMLSchema#string">habit</type>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://coronavirusawareness.rdf#sneezing -->
+
+    <owl:NamedIndividual rdf:about="http://coronavirusawareness.rdf#sneezing">
+        <rdf:type rdf:resource="http://coronavirusawareness.rdf#symptoms"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://coronavirusawareness.rdf#social_distancing -->
+
+    <owl:NamedIndividual rdf:about="http://coronavirusawareness.rdf#social_distancing">
+        <rdf:type rdf:resource="http://coronavirusawareness.rdf#prevention"/>
+        <description>Maintain a safe distance from anyone who is coughing or sneezing.</description>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://coronavirusawareness.rdf#sore_throat -->
+
+    <owl:NamedIndividual rdf:about="http://coronavirusawareness.rdf#sore_throat">
+        <rdf:type rdf:resource="http://coronavirusawareness.rdf#symptoms"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://coronavirusawareness.rdf#stuffy_nose -->
+
+    <owl:NamedIndividual rdf:about="http://coronavirusawareness.rdf#stuffy_nose">
+        <rdf:type rdf:resource="http://coronavirusawareness.rdf#symptoms"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://coronavirusawareness.rdf#sun_exposure -->
+
+    <owl:NamedIndividual rdf:about="http://coronavirusawareness.rdf#sun_exposure">
+        <rdf:type rdf:resource="http://coronavirusawareness.rdf#misconceptions"/>
+        <description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">You can catch COVID-19, no matter how sunny or hot the weather is. Countries with hot weather have reported cases of COVID-19.</description>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://coronavirusawareness.rdf#teens -->
+
+    <owl:NamedIndividual rdf:about="http://coronavirusawareness.rdf#teens">
+        <rdf:type rdf:resource="http://coronavirusawareness.rdf#age_groups"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://coronavirusawareness.rdf#thermal_scanners -->
+
+    <owl:NamedIndividual rdf:about="http://coronavirusawareness.rdf#thermal_scanners">
+        <rdf:type rdf:resource="http://coronavirusawareness.rdf#misconceptions"/>
+        <description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Thermal scanners are effective in detecting people who have developed a fever (i.e. have a higher than normal body temperature) because of infection with the new coronavirus.
+
+However, they cannot detect people who are infected but are not yet sick with fever. This is because it takes between 2 and 10 days before people who are infected become sick and develop a fever.</description>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://coronavirusawareness.rdf#ultraviolet -->
+
+    <owl:NamedIndividual rdf:about="http://coronavirusawareness.rdf#ultraviolet">
+        <rdf:type rdf:resource="http://coronavirusawareness.rdf#misconceptions"/>
+        <description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">UV lamps should not be used to sterilize hands or other areas of skin as UV radiation can cause skin irritation.</description>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://coronavirusawareness.rdf#wash_hands -->
+
+    <owl:NamedIndividual rdf:about="http://coronavirusawareness.rdf#wash_hands">
+        <rdf:type rdf:resource="http://coronavirusawareness.rdf#prevention"/>
+        <description>Clean your hands often. Use soap and water, or an alcohol-based hand rub.</description>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://coronavirusawareness.rdf#10_second_breath -->
+
+    <owl:NamedIndividual rdf:about="http://coronavirusawareness.rdf#10_second_breath">
+        <rdf:type rdf:resource="http://coronavirusawareness.rdf#misconceptions"/>
+        <description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Being able to hold your breath for 10 seconds or more without coughing or feeling discomfort DOES NOT mean you are free from the coronavirus disease</description>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://coronavirusawareness.rdf#5g_mobile -->
+
+    <owl:NamedIndividual rdf:about="http://coronavirusawareness.rdf#5g_mobile">
+        <rdf:type rdf:resource="http://coronavirusawareness.rdf#misconceptions"/>
+        <description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Viruses cannot travel on radio waves/mobile networks. COVID-19 is spreading in many countries that do not have 5G mobile networks.</description>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
