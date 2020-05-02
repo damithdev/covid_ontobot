@@ -49,7 +49,7 @@
 <template>RT|T04|Here is what i know of <star/>|<star/></template>
 </category>
 <category><pattern>WHAT ARE THE MYTHS ABOUT <SET>CORONA</SET></pattern>
-<template>RT|T05|The myths about <star/> are...|covid19</template>
+<template>RT|T05|Myths about <star/> are corrected in the list below...|covid19</template>
 </category>
 <category><pattern>WHAT ARE THE MYTHS ABOUT *</pattern>
 <template>Sorry I don't know any myths about <sta/></template>

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <aiml>
-<!-- File: update.aiml -->
+<!-- File: picture.aiml -->
 <!-- Author: Damith Warnakulasuriya -->
 <!-- Last modified: April 30, 2020 -->
 <!--  -->
@@ -15,10 +15,19 @@
 <!-- implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.   -->
 <!--  -->
 <!-- For more information see http://www.alicebot.org -->
-<category><pattern>BUILD</pattern>
-<template>Thu Apr 30 23:55:34 IST 2020</template>
+<category><pattern>SHOW ME *</pattern>
+<template><srai>PICTUREBLAB <star/></srai><sraix hint="pic">SHOW ME <star/></sraix></template>
 </category>
-<category><pattern>DELEVLOPMENT ENVIRONMENT</pattern>
-<template>Program AB 0.0.4.2 beta -- AI Foundation Reference AIML 2.0 implementation</template>
+<category><pattern>PICTUREBLAB *</pattern>
+<template><random>
+<li>Here you are.</li>
+<li>I hope you like this picture.</li>
+<li>I have this picture.</li>
+<li>There you go.</li>
+<li>Look at that <star/>.</li>
+<li>This is what <star/> looks like.</li>
+<li>I found this pic of <star/>.</li>
+<li>I've displayed a picture for you.</li>
+</random></template>
 </category>
 </aiml>
